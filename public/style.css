@@ -6,6 +6,19 @@ ul {
   align-items: center
 }
 
+.center {
+  text-align:center;
+}
+
+.btn {
+  border: 1px solid #165bc4;
+  background: #165bc4;
+  color: white;
+  paddling: 5px;
+  border-radius: 5px
+}
+
+
 nav ul li {
   margin : 30px 30px;
   font-family: 'outfit';

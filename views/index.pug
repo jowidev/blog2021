@@ -1,5 +1,11 @@
 extends layout 
 
 block content
-  h1 Mi blog
-  p hola
+  each post in posts
+   h2= post.title.toUpperCase()
+   h5= post.date.toLocaleDateString('es-AR')
+   h5= post.topic
+   h6 Escrito por #{post.author}
+   p= post.content
+   hr
+  
