@@ -1,7 +1,7 @@
 const mongoose = require ('mongoose');
 const CommentSchema = new mongoose.Schema({
-  author: String,
-  text: String,
+  name: String,
+  comment: String,
 date: { type: Date, default: Date.now }
 });
 const PostSchema = new mongoose.Schema ({

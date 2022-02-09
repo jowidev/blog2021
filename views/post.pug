@@ -1,0 +1,23 @@
+extends layout 
+
+block content
+  h1= post.title
+  h3 Escrito por #{post.author} el #{post.date.toLocaleDateString(es-AR)}
+  p= post.content
+  hr
+  h2 Deja tu comentario
+  form(action="/comments" method="post")
+    label Nombre
+    br
+    input(name="name")  
+    br 
+    label comentario
+    br
+    textarea(name="comment")
+    br
+    input(name="id" value=post._id hidden)
+    button Enviar
+  hr
+  each comment in post.comments 
+    h4= comment.name
+    p= comment.comment 
