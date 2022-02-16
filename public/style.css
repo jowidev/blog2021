@@ -1,3 +1,13 @@
+
+body {
+  margin: 0;
+  background-color: lightgray;
+}
+nav {
+  background-color: gray;
+  padding: 0;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -11,24 +21,31 @@ ul {
 }
 
 .btn {
-  border: 1px solid #165bc4;
-  background: #165bc4;
-  color: white;
+  border: 10px solid #165ac4;
+  background: red;
+  color: black;
   paddling: 5px;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
+.post {
+  margin: 8px;
+}
+
+h2 {
+  font-family: Lato;
+}
 
 nav ul li {
   margin : 30px 30px;
   font-family: 'outfit';
   font-size: 22px
-  border-radius: 5px;
-  border: 2px solid palevioletred
-  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 30px;
 }
 
 nav  ul li a {
   text-decoration: none;
-  color: palevioletred;
+  color: black;
 }

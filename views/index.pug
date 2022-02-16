@@ -2,12 +2,12 @@ extends layout
 
 block content
   each post in posts
-   a(href=`/posts/${post._id}`)  
+
+   a(href=`/posts/${post._id}`)
      h2= post.title.toUpperCase()
    h5= post.date.toLocaleDateString('es-AR')
    h5= post.topic
    h6 Escrito por #{post.author}
    p #{post.content.substring(0,45)} ...
-     a(href=`/posts/${post._id}`) Leer más 
+     a(href=`/posts/${post._id}`) Leer más
    hr
-  
